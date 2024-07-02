@@ -1,0 +1,74 @@
+---
+import { Carousel3D } from '@/components/Carousel3D/Carousel3D';
+import MongoI from "../../utils/Icons/MongoI.astro"
+import ExpressI from "../../utils/Icons/ExpressI.astro"
+import BootstrapI from "../../utils/Icons/BootstrapI.astro"
+import SassI from "../../utils/Icons/SassI.astro"
+import NodeI from "../../utils/Icons/NodeI.astro"
+import ReactI from '@/utils/Icons/ReactI.astro';
+import LayoutClean from '@/layouts/LayoutClean.astro';
+import {Back} from "../../components/Back/Back"
+---
+
+<LayoutClean title="ND Capacitaciones">
+	<main class="w-full flex justify-center items-center flex-col mt-10">
+		<div class="w-[90vw]">
+			<div class="flex gap-2 items-end">
+				<Back client:only="react" />
+				<img src="/assets/ndcapacitaciones/logo4.png" class="w-28 md:w-32"/><h2 class="text-3xl md:text-6xl">NDCapacitaciones</h2>
+			</div>
+			<div class="containerCarousel3D flex justify-center my-10">
+				<Carousel3D client:only="react" imgs={[
+				"/assets/ndcapacitaciones/ndcapacitaciones1.jpg",
+				"/assets/ndcapacitaciones/ndcapacitaciones2.jpg",
+				"/assets/ndcapacitaciones/ndcapacitaciones3.jpg",
+				"/assets/ndcapacitaciones/ndcapacitaciones4.jpg",
+				"/assets/ndcapacitaciones/ndcapacitaciones5.jpg",
+				]} web='https://ndcapacitaciones.xyz' github='https://github.com/frandepe/NDcapacitaciones'/>	
+			</div>
+			<div class="text-white-100">
+				<div class="max-w-4xl mx-auto p-6 my-10">
+				  <h1 class="text-3xl font-bold text-center mb-6">Freelance Web Developer</h1>
+				
+				  <div class="mb-6">
+					<h2 class="text-2xl font-semibold mb-2">Responsibilities and Achievements:</h2>
+					
+					<div class="mb-4">
+					  <h3 class="text-xl font-semibold mb-1">Client Coordination and Idea Coordination:</h3>
+					  <p>I was responsible for communicating with the client and coordinating ideas for their first aid training website. We collaborated on a design concept, and the client provided content material and ideas. I also suggested design improvements and web functionality enhancements, focusing on usability and scalability.</p>
+					</div>
+					
+					<div class="mb-4">
+					  <h3 class="text-xl font-semibold mb-1">Dashboard Development:</h3>
+					  <p>I developed a dashboard that allowed the client to modify content and add courses to their website. The technology stack included React, Express, Node.js, and MongoDB. I utilized Bootstrap and Sass for styling and frontend development.</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+		<div class="flex flex-col items-center mb-10">
+			<h3 class="text-4xl my-10">Technologies used</h3>
+			<div class="flex justify-center gap-6 flex-wrap">
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/react.png" width={40}/>  <p>React</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/Express.png" width={40}/>  <p>Express</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/Node.js.png" width={40}/>  <p>Node</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/MongoDB.png" width={40}/>  <p>MongoDB</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/Bootstrap.png" width={40}/>  <p>Bootstrap</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/Sass.png" width={40}/>  <p>SASS</p>
+				</div>
+			</div>
+			
+		</div>
+	</main>
+</LayoutClean>

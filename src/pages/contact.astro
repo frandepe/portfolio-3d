@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import "../index.css"
+import { ContactForm } from '@/components/ContactForm/ContactForm';
+import SocialIcons from '@/components/SocialIcons.astro';
+import UbicationI from '@/utils/Icons/UbicationI.astro';
+import EmailI from '@/utils/Icons/EmailI.astro';
+import { GitHubI } from '@/utils/svgIconsTech';
+import LinkedInI from '@/utils/Icons/LinkedInI.astro';
+---
+
+<Layout title="Portfolio FD">
+	<main class="flex gap-6 flex-col lg:flex-row w-[90vw] sm:w-auto">
+		<!-- <SocialIcons /> -->
+	<div class="lg:w-[600px] w-[90vw] flex flex-col justify-between gap-10 lg:gap-0">
+		<div>
+			<h4 class="text-4xl mb-4">
+				Get in touch
+			</h4>
+			<p>If you wish to contact me for job opportunities, collaborations or any questions, 
+				I will be pleased to hear from you. You can write to me directly through the contact form 
+				or through the alternatives you will find in this section
+			</p>
+		</div>
+			<div class="flex gap-10 flex-wrap">
+				<div class="flex gap-4">
+					<div class="text-white w-11 h-11 bg-[var(--primary)] flex justify-center items-center rounded-md p-1">
+						<UbicationI />
+					</div>
+					<div>
+						<p class="font-semibold text-gray-500">Ubication</p>
+						<p>La Plata, Argentina</p>
+					</div>
+				</div>
+				<div class="flex gap-4">
+					<div class="text-white w-11 h-11 bg-[var(--primary)] flex justify-center items-center rounded-md p-1">
+						<EmailI />
+					</div>
+					<div>
+						<p class="font-semibold text-gray-500">Email</p>
+						<p>frandepaulo23@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex gap-4">
+				<div class="mb-2 bg-gray-100 rounded-full p-2 w-8 h-8"><a href="https://github.com/frandepe"><GitHubI /></a></div>
+				<div class="bg-gray-100 rounded-full p-2 w-8 h-8"><a href="https://www.linkedin.com/in/franco-de-paulo/"><LinkedInI /></a></div>
+			</div>
+	</div>
+		<ContactForm client:only="react"/>
+	</main>
+</Layout>
+
+
+
+<!-- https://www.youtube.com/watch?v=WZ4N4KLPRXc&list=LL&index=6 -->

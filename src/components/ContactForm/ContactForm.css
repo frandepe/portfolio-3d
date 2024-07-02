@@ -1,0 +1,36 @@
+.input-field {
+  border-bottom: 1px solid rgba(10, 180, 180, 1);
+  background-color: rgba(20, 20, 20, 0.6);
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.753);
+}
+
+/* Evitar que el fondo se vuelva blanco al autocompletar */
+.input-field:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(20, 20, 20, 0.6) inset;
+  box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.959) inset;
+  -webkit-text-fill-color: white;
+}
+
+/* Mostrar el color de fondo original al seleccionar texto */
+.input-field::selection {
+  background-color: rgba(20, 20, 20, 0.6);
+}
+
+.input-text {
+  resize: none;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: rgba(20, 20, 20, 0.6);
+  color: white;
+  outline: none;
+}
+
+.input-text::placeholder {
+  color: rgba(255, 255, 255, 0.753);
+}

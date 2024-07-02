@@ -1,0 +1,85 @@
+---
+import { Carousel3D } from '@/components/Carousel3D/Carousel3D';
+import MongoI from "../../utils/Icons/MongoI.astro"
+import FigmaI from "../../utils/Icons/FigmaI.astro"
+import TypescriptI from "../../utils/Icons/TypescriptI.astro"
+import NextI from '@/utils/Icons/NextI.astro';
+import LayoutClean from '@/layouts/LayoutClean.astro';
+import MongooseI from '@/utils/Icons/MongooseI.astro';
+import TailwindI from '@/utils/Icons/TailwindI.astro';
+import {Back} from "../../components/Back/Back"
+---
+
+<LayoutClean title="ND Capacitaciones">
+	<main class="w-full flex justify-center items-center flex-col mt-10">
+		<div class="w-[90vw]">
+			<div class="flex gap-2 items-end">
+				<Back client:only="react" />
+				<img src="/assets/guruia/guruiaLogo.png" class="w-28 md:w-40"/>
+			</div>
+			<div class="containerCarousel3D flex justify-center my-10">
+				<Carousel3D client:only="react" imgs={[
+				"/assets/guruia/guruia1.jpg",
+				"/assets/guruia/guruia2.jpg",
+				"/assets/guruia/guruia3.jpg",
+				"/assets/guruia/guruia4.jpg",
+				"/assets/guruia/guruia5.jpg",
+				]} web='https://project-next-jf.vercel.app/'/>	
+			</div>
+			<div class="text-white-100">
+				<div class="max-w-4xl mx-auto p-6 my-10">
+				  <h1 class="text-3xl font-bold text-center mb-6">Collaborative Project: Therapist-Patient Meeting Platform</h1>
+			  
+				  <div class="mb-6">
+					<h2 class="text-2xl font-semibold mb-2">Responsibilities and Achievements:</h2>
+					
+					<div class="mb-4">
+					  <h3 class="text-xl font-semibold mb-1">Project Development and Management:</h3>
+					  <p>In collaboration with a colleague, we developed an application using Next.js designed to facilitate meetings between therapists and patients through the platform. We were responsible for programming a wide range of functionalities to ensure a seamless user experience.</p>
+					</div>
+					
+					<div class="mb-4">
+					  <h3 class="text-xl font-semibold mb-1">Core Functionalities:</h3>
+					  <p>We implemented numerous features, including a video call system, chat for user communication, authentication systems, and calendar integration for patients to schedule consultations. The platform also supports multiple languages and includes a payment system for credit card and PayPal transactions.</p>
+					</div>
+					
+					<div class="mb-4">
+					  <h3 class="text-xl font-semibold mb-1">Client Collaboration:</h3>
+					  <p>We held regular meetings with the client to specify and refine the required details. This ensured the final product met all the client's needs and expectations.</p>
+					</div>
+					
+					<div class="mb-4">
+					  <h3 class="text-xl font-semibold mb-1">Full Lifecycle Management:</h3>
+					  <p>We managed the entire lifecycle of the web application, utilizing the latest technologies including Next.js 14, Shadcn for a modern design, and Cloudinary as the image database, among other tools.</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  
+		</div>
+		<div class="flex flex-col items-center mb-10">
+			<h3 class="text-4xl my-10">Technologies used</h3>
+			<div class="flex justify-center gap-6 flex-wrap">
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/Next.js.png" width={40}/>  <p>Next</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/TypeScript.png" width={40}/>  <p>TypeScript</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/MongoDB.png" width={40}/> <p>MongoDB</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/Mongoose.js.png" width={40}/>  <p>Mongoose</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/Tailwind CSS.png" width={40}/>  <p>Tailwind-shadcn</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/Figma.png" width={40}/> <p>Figma</p>
+				</div>
+			</div>
+			
+		</div>
+	</main>
+</LayoutClean>

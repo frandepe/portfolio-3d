@@ -1,0 +1,16 @@
+.Jobs__container--ul {
+  position: relative;
+  z-index: 10;
+}
+.Jobs__container--ul li {
+  width: max-content;
+  overflow: hidden;
+  transition: transform 300ms ease-in-out 0s, color 300ms ease-in-out 0s;
+}
+.Jobs__container--ul li a {
+  text-decoration: none;
+}
+.Jobs__container--ul li:hover {
+  transform: translateX(10px);
+  color: var(--secondary);
+}

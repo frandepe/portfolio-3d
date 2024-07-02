@@ -1,0 +1,85 @@
+---
+import { Carousel3D } from '@/components/Carousel3D/Carousel3D';
+// import MongoI from "../../utils/Icons/MongoI.astro"
+import ExpressI from "../../utils/Icons/ExpressI.astro"
+import MongooseI from "../../utils/Icons/MongooseI.astro"
+import NodeI from "../../utils/Icons/NodeI.astro"
+import ReactI from '@/utils/Icons/ReactI.astro';
+import LayoutClean from '@/layouts/LayoutClean.astro';
+import MaterialUiI from '@/utils/Icons/MaterialUiI.astro';
+import {Back} from "../../components/Back/Back"
+---
+
+<LayoutClean title="ND Capacitaciones">
+	<main class="w-full flex justify-center items-center flex-col mt-10">
+		<div class="w-[90vw]">
+			<div class="flex gap-2 items-end">
+				<Back client:only="react" />
+				<img src="/assets/guia/logoNaranja.png" class="w-12"/><h2 class="text-3xl md:text-6xl">Guía Pellegrini</h2>
+			</div>
+			<div class="containerCarousel3D flex justify-center my-10">
+				<Carousel3D client:only="react" imgs={[
+				"/assets/guia/guia1.jpg",
+				"/assets/guia/guia2.jpg",
+				"/assets/guia/guia3.jpg",
+				"/assets/guia/guia4.jpg",
+				"/assets/guia/guia5.jpg",
+				]} web='https://guiapelle-git-main-frandepe.vercel.app/' github='https://github.com/frandepe/front-todopelle'/>	
+			</div>
+			<div class="text-white-100">
+				<div class="max-w-4xl mx-auto p-6 my-10">
+				  <h1 class="text-3xl font-bold text-center mb-6">Personal Project: Job Guide for Pellegrini</h1>
+			  
+				  <div class="mb-6">
+					<h2 class="text-2xl font-semibold mb-2">Responsibilities and Achievements:</h2>
+					
+					<div class="mb-4">
+					  <h3 class="text-xl font-semibold mb-1">Project Lifecycle Management:</h3>
+					  <p>I was in charge of the entire lifecycle of the project, including design, concept, advertising, and scalability. This involved extensive research and strategic planning to ensure the project's success.</p>
+					</div>
+					
+					<div class="mb-4">
+					  <h3 class="text-xl font-semibold mb-1">Collaboration with City Officials:</h3>
+					  <p>I conducted research and met with the mayor of Pellegrini to evaluate all the business sectors that could be included on the website. This collaboration was crucial in identifying the key areas to feature.</p>
+					</div>
+					
+					<div class="mb-4">
+					  <h3 class="text-xl font-semibold mb-1">Development of Mapping System:</h3>
+					  <p>I developed a mapping system to locate all businesses in Pellegrini. This feature was essential for users to easily find and navigate to different businesses in the city.</p>
+					</div>
+					
+					<div class="mb-4">
+					  <h3 class="text-xl font-semibold mb-1">Engagement with Local Businesses:</h3>
+					  <p>I engaged with numerous local business owners to gather materials and information about their businesses to be featured on the website. This involved building relationships and ensuring accurate representation of each business.</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  
+		</div>
+		<div class="flex flex-col items-center mb-10">
+			<h3 class="text-4xl my-10">Technologies used</h3>
+			<div class="flex justify-center gap-6 flex-wrap">
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/react.png" width={40}/> <p>React</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/Express.png" width={40}/>  <p>Express</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/Node.js.png" width={40}/> <p>Node</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/MongoDB.png" width={40}/> 	<p>MongoDB</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/Mongoose.js.png" width={40}/>  <p>Mongoose</p>
+				</div>
+				<div class="flex flex-col justify-items-center items-center">
+					<img src="/imgs/icons/Material UI.png" width={40}/> <p>Material UI</p>
+				</div>
+			</div>
+			
+		</div>
+	</main>
+</LayoutClean>
