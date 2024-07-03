@@ -13,6 +13,11 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*", "types.d.ts"],
+  "include": [
+    "src/**/*",
+    "types.d.ts",
+    "public/astronaut/Astronaut2.jsx",
+    "public/astronaut/Astronaut.jsx"
+  ],
   "exclude": ["node_modules"]
 }

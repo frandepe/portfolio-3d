@@ -9,7 +9,7 @@ interface Props {
     type?: "button" | "submit" | "reset"; 
 }
 
-const { href, title, bgColor, color="white", download, disabled="false", type="button" } = Astro.props;
+const { href, title, bgColor, color="white", download, disabled=false, type="button" } = Astro.props;
 ---
 <a href={href} download={download}>
     <button disabled={disabled} type={type} style={{ backgroundColor: bgColor, color: color }}>

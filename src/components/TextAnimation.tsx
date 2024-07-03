@@ -8,7 +8,7 @@ import {
   OrbitControls,
   CameraShake,
 } from "@react-three/drei";
-import Astronaut from "./Astronaut";
+import Astronaut from "../../public/astronaut/Astronaut";
 import { useState } from "react";
 import * as THREE from "three";
 import { useMediaQuery } from "@/hooks/useMediaQuery";

@@ -1,6 +1,6 @@
 import { Environment, OrbitControls, ScrollControls } from "@react-three/drei";
 import { Jobs } from "./Jobs";
-import Astronaut2 from "../Astronaut2";
+import Astronaut2 from "../../../public/astronaut/Astronaut2";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 
