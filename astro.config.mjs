@@ -8,29 +8,9 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   integrations: [react(), tailwind()],
   output: "server",
+  adapter: vercel(),
+  build: { chunkSizeWarningLimit: 1600 },
   // adapter: netlify({
   //   edgeMiddleware: true,
   // }),
-  adapter: vercel(),
 });
-
-// export default defineConfig({
-//   site: 'https://nemutas.github.io',
-//   base: '/three-template-with-astro',
-//   server: {
-//     host: true,
-//   },
-//   vite: {
-//     plugins: [glsl()],
-//     build: {
-//       assetsInlineLimit: 0,
-//       rollupOptions: {
-//         output: {
-//           assetFileNames: '[ext]/[name][extname]',
-//           entryFileNames: 'script/entry.js',
-//         },
-//       },
-//       cssCodeSplit: false,
-//     },
-//   },
-// })
