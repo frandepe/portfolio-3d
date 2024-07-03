@@ -1,9 +1,7 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
-  useGLTF,
   useTexture,
   Center,
-  Decal,
   Text3D,
   OrbitControls,
   CameraShake,
