@@ -13,3 +13,24 @@ export default defineConfig({
   // }),
   adapter: vercel(),
 });
+
+// export default defineConfig({
+//   site: 'https://nemutas.github.io',
+//   base: '/three-template-with-astro',
+//   server: {
+//     host: true,
+//   },
+//   vite: {
+//     plugins: [glsl()],
+//     build: {
+//       assetsInlineLimit: 0,
+//       rollupOptions: {
+//         output: {
+//           assetFileNames: '[ext]/[name][extname]',
+//           entryFileNames: 'script/entry.js',
+//         },
+//       },
+//       cssCodeSplit: false,
+//     },
+//   },
+// })

@@ -8,11 +8,11 @@ import {Back} from "../../components/Back/Back"
 	<main class="w-full flex justify-center items-center flex-col mt-10">
 		<div class="w-[90vw]">
 			<div class="flex gap-2 items-end">
-				<Back client:only="react" />
+				<Back client:only />
 				<img src="/assets/guia/logoNaranja.png" class="w-12"/><h2 class="text-3xl md:text-6xl">Guía Pellegrini</h2>
 			</div>
 			<div class="containerCarousel3D flex justify-center my-10">
-				<Carousel3D client:only="react" imgs={[
+				<Carousel3D client:only imgs={[
 				"/assets/guia/guia1.jpg",
 				"/assets/guia/guia2.jpg",
 				"/assets/guia/guia3.jpg",

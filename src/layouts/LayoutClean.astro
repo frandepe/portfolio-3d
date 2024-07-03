@@ -22,7 +22,7 @@ const { title } = Astro.props;
 		<ViewTransitions/>
 	</head>
 	<body transition:animate="slide" class="text-white">
-		<MainNavbar client:only="react"/>
+		<MainNavbar client:only />
 		<slot />
 	</body>
 </html>
