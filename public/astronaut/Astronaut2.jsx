@@ -17,9 +17,7 @@ export const NB_FLOORS = 3;
 
 export default function Model(props) {
   const ref = useRef();
-  const { nodes, materials, animations } = useGLTF(
-    "../../../public/astronaut/astronaut.gltf"
-  );
+  const { nodes, materials, animations } = useGLTF("/astronaut/astronaut.gltf");
   const { actions } = useAnimations(animations, ref);
   // useLayoutEffect(() => {
   //   actions["Armature.001|DANCE"].play();
@@ -126,4 +124,4 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("../../../public/astronaut/astronaut.gltf");
+useGLTF.preload("/astronaut/astronaut.gltf");

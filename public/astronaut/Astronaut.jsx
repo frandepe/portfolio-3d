@@ -13,7 +13,8 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 export default function Model(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(
-    "../../../public/astronaut/astronaut.gltf"
+    "/astronaut/astronaut.gltf"
+    // "../../../public/astronaut/astronaut.gltf"
   );
   const { actions } = useAnimations(animations, group);
   // scale define el tamaño del astronauta
@@ -69,4 +70,4 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("../../../public/astronaut/astronaut.gltf");
+useGLTF.preload("/astronaut/astronaut.gltf");
