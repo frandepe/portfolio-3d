@@ -32,10 +32,10 @@ export const ContactForm = () => {
     setLoading(true);
     emailjs
       .sendForm(
-        "service_il7e4f6",
-        "template_i929s0s",
+        "service_yaat4lr",
+        "template_af1rz1p",
         form.current as any,
-        "nszf59HRKL-tLfLlD"
+        "1pJRcoYPZ5B_8OK6a"
       )
       .then(
         () => {

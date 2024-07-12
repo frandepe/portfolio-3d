@@ -54,7 +54,7 @@ export const Jobs = () => {
           <h1 className="font-semibold font-serif text-2xl">
             Professional Jobs 🏢
           </h1>
-          <p className="text-gray-500">It's a feature, not a bug</p>
+          <p className="text-gray-500">All it's a feature, not a bug</p>
           <p className="mt-3">
             <b>Contracts</b>
           </p>
@@ -93,7 +93,7 @@ export const Jobs = () => {
           <h1 className="font-semibold font-serif text-2xl">
             Practice Jobs 📚
           </h1>
-          <p className="text-gray-500">On my PC works</p>
+          <p className="text-gray-500">* On my PC works</p>
           <p className="mt-3">
             <b>Projects</b>
           </p>
